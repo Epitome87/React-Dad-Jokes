@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
-import JokeList from './JokeList';
+import JokePage from './components/JokePage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App: React.FC = () => {
   return (
-    <div className='App'>
-      <JokeList numJokesToFetch={10} />
-    </div>
+    <Router basename='/'>
+      <Routes>
+        <Route path='/' element={<JokePage />} />
+      </Routes>
+    </Router>
   );
 };
 

@@ -1,0 +1,25 @@
+.JokePage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+
+  background: linear-gradient(
+    135deg,
+    #a0e9ff 30%,
+    #a162e8 50%,
+    #f093b0 70%,
+    #edca85 94%
+  );
+
+  background-size: 200% 100%;
+  animation: gradient 20s ease-in-out alternate infinite;
+}
+
+@media screen and (max-width: 750px) {
+  .JokePage {
+    flex-direction: column;
+  }
+}

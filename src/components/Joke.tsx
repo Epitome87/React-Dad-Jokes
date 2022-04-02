@@ -1,5 +1,5 @@
 import React from 'react';
-import { IJoke } from './JokeList';
+import { IJoke } from '../interfaces';
 import './Joke.css';
 
 interface IJokeProps {

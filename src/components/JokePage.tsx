@@ -1,24 +1,15 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import './JokeList.css';
-import Joke from './Joke';
-import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import FetchPanel from './FetchPanel';
+import JokeList from './JokeList';
+import axios from 'axios';
+import { IJoke } from '../interfaces';
+import './JokePage.css';
 
 const JOKE_API_URL = 'https://icanhazdadjoke.com/';
 
-// Defines the shape of our "Joke", which we pass as a prop(s) to a Joke component
-export interface IJoke {
-  id: string;
-  text: string;
-  votes: number;
-}
+const numJokesToFetch = 10;
 
-// Defines the shape of the props the JokeList expects
-interface JokeListProps {
-  numJokesToFetch: number;
-}
-
-const JokeList: React.FC<JokeListProps> = (props) => {
+function JokePage() {
   // Set jokes to those in our local storage. OR if none exist, parsing "[]" means empty array
   const parsedJokes = JSON.parse(window.localStorage.getItem('jokes') || '[]');
   const [jokes, setJokes] = useState<IJoke[] | []>(parsedJokes);
@@ -38,7 +29,7 @@ const JokeList: React.FC<JokeListProps> = (props) => {
     const fetchedJokes = [];
 
     // Fetch unique jokes until we have the amount desired
-    while (fetchedJokes.length < props.numJokesToFetch) {
+    while (fetchedJokes.length < numJokesToFetch) {
       // Have to set a config object with the appropriate headers, as the joke API returns HTML!
       const joke = await axios.get(JOKE_API_URL, {
         headers: { Accept: 'application/json' },
@@ -93,25 +84,12 @@ const JokeList: React.FC<JokeListProps> = (props) => {
     );
   }
 
-  const renderedJokes = jokes.map((joke) => {
-    return (
-      <Joke
-        key={joke.id}
-        id={joke.id}
-        text={joke.text}
-        votes={joke.votes}
-        upvote={() => handleVote(joke.id, 1)}
-        downvote={() => handleVote(joke.id, -1)}
-      />
-    );
-  });
-
   return (
-    <div className='JokeList'>
+    <main className='JokePage'>
       <FetchPanel onFetch={handleClick} />
-      <div className='JokeList__jokes'>{jokes && renderedJokes}</div>
-    </div>
+      <JokeList jokes={jokes} handleVote={handleVote} />
+    </main>
   );
-};
+}
 
-export default React.memo(JokeList);
+export default JokePage;

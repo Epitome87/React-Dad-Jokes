@@ -1,10 +1,12 @@
-.App {
+body {
   font-family: 'Rubik', sans-serif;
   color: #78909c;
-  display: flex;
+  /* display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
 
   background: linear-gradient(
     135deg,
@@ -12,11 +14,30 @@
     #a162e8 50%,
     #f093b0 70%,
     #edca85 94%
-  );
+  ); */
 
-  /* Experimenting with animated lienar gradient */
-  background-size: 200% 100%;
-  animation: gradient 20s ease-in-out alternate infinite;
+  /* background-size: 200% 100%;
+  animation: gradient 20s ease-in-out alternate infinite; */
+}
+
+.Container {
+  max-width: 1280px;
+  margin: 0 auto;
+  max-height: 100vh;
+  /* overflow: hidden; */
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+  .App {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 @keyframes gradient {

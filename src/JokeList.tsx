@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import './JokeList.css';
 import Joke from './Joke';
 import axios from 'axios';
+import FetchPanel from './FetchPanel';
 
 const JOKE_API_URL = 'https://icanhazdadjoke.com/';
 
@@ -61,7 +62,7 @@ const JokeList: React.FC<JokeListProps> = (props) => {
     setJokes([...sortJokes(jokes), ...fetchedJokes]);
     setIsLoading(false);
 
-    // Local Storage onlys tores strings -- so convert jokes object to string
+    // Local Storage only stores strings -- so convert jokes object to string
     window.localStorage.setItem('jokes', JSON.stringify(jokes));
   };
 
@@ -107,18 +108,7 @@ const JokeList: React.FC<JokeListProps> = (props) => {
 
   return (
     <div className='JokeList'>
-      <div className='JokeList__sidebar'>
-        <h1 className='JokeList__title'>
-          <span>Dad</span> Jokes
-        </h1>
-        <img
-          src='https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg'
-          alt='Crying with laughter Emoji'
-        />
-        <button className='JokeList__btn-more' onClick={handleClick}>
-          Fetch Jokes
-        </button>
-      </div>
+      <FetchPanel onFetch={handleClick} />
       <div className='JokeList__jokes'>{jokes && renderedJokes}</div>
     </div>
   );

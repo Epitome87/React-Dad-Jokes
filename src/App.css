@@ -5,11 +5,12 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+
   background: linear-gradient(
     135deg,
-    rgba(179, 229, 252, 1) 0%,
-    rgba(179, 229, 252, 1) 50%,
-    rgba(240, 98, 146, 1) 50%,
-    rgba(240, 98, 146, 1) 100%
+    #a0e9ff 30%,
+    #a162e8 50%,
+    #f093b0 70%,
+    #edca85 94%
   );
 }

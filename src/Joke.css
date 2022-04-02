@@ -39,15 +39,16 @@
   margin: 10px;
   cursor: pointer;
   transition: all 0.3s;
+  transform-origin: center;
 }
 
 .fa-arrow-up:hover {
-  animation: move-up 0.7s ease-out;
+  animation: move-up 0.7s ease-out infinite;
   color: #8bc34a;
 }
 
 .fa-arrow-down:hover {
-  animation: move-down 0.7s ease-out;
+  animation: move-down 0.7s ease-out infinite;
   color: #f44336;
 }
 
@@ -104,11 +105,11 @@
   0%,
   50%,
   100% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1.2);
   }
   25%,
   75% {
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.2);
   }
 }
 
@@ -116,10 +117,10 @@
   0%,
   50%,
   100% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1.2);
   }
   25%,
   75% {
-    transform: translateY(3px);
+    transform: translateY(3px) scale(1.2);
   }
 }

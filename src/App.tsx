@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App: React.FC = () => {
   return (
-    <Router basename='/'>
+    <Router basename='/React-Dad-Jokes'>
       <Routes>
         <Route path='/' element={<JokePage />} />
       </Routes>

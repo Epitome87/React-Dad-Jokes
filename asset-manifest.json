@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React-Dad-Jokes/static/css/main.84f36940.chunk.css",
-    "main.js": "/React-Dad-Jokes/static/js/main.4b0deb3d.chunk.js",
-    "main.js.map": "/React-Dad-Jokes/static/js/main.4b0deb3d.chunk.js.map",
+    "main.js": "/React-Dad-Jokes/static/js/main.939fb309.chunk.js",
+    "main.js.map": "/React-Dad-Jokes/static/js/main.939fb309.chunk.js.map",
     "runtime-main.js": "/React-Dad-Jokes/static/js/runtime-main.b59ce081.js",
     "runtime-main.js.map": "/React-Dad-Jokes/static/js/runtime-main.b59ce081.js.map",
     "static/js/2.f71871ba.chunk.js": "/React-Dad-Jokes/static/js/2.f71871ba.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b59ce081.js",
     "static/js/2.f71871ba.chunk.js",
     "static/css/main.84f36940.chunk.css",
-    "static/js/main.4b0deb3d.chunk.js"
+    "static/js/main.939fb309.chunk.js"
   ]
 }

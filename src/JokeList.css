@@ -149,6 +149,7 @@
     margin-top: 2rem;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
+    margin-left: 0;
   }
   .JokeList__spinner {
   }

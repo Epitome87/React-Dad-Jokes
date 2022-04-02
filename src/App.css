@@ -13,4 +13,17 @@
     #f093b0 70%,
     #edca85 94%
   );
+
+  /* Experimenting with animated lienar gradient */
+  background-size: 200% 100%;
+  animation: gradient 20s ease-in-out alternate infinite;
+}
+
+@keyframes gradient {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
 }

@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/React-Dad-Jokes/static/css/main.827f79b8.chunk.css",
-    "main.js": "/React-Dad-Jokes/static/js/main.b72f1cde.chunk.js",
-    "main.js.map": "/React-Dad-Jokes/static/js/main.b72f1cde.chunk.js.map",
-    "runtime-main.js": "/React-Dad-Jokes/static/js/runtime-main.be341e4e.js",
-    "runtime-main.js.map": "/React-Dad-Jokes/static/js/runtime-main.be341e4e.js.map",
-    "static/js/2.9f0f6ca1.chunk.js": "/React-Dad-Jokes/static/js/2.9f0f6ca1.chunk.js",
-    "static/js/2.9f0f6ca1.chunk.js.map": "/React-Dad-Jokes/static/js/2.9f0f6ca1.chunk.js.map",
-    "static/js/3.75c1a27f.chunk.js": "/React-Dad-Jokes/static/js/3.75c1a27f.chunk.js",
-    "static/js/3.75c1a27f.chunk.js.map": "/React-Dad-Jokes/static/js/3.75c1a27f.chunk.js.map",
+    "main.css": "/React-Dad-Jokes/static/css/main.84f36940.chunk.css",
+    "main.js": "/React-Dad-Jokes/static/js/main.4b0deb3d.chunk.js",
+    "main.js.map": "/React-Dad-Jokes/static/js/main.4b0deb3d.chunk.js.map",
+    "runtime-main.js": "/React-Dad-Jokes/static/js/runtime-main.b59ce081.js",
+    "runtime-main.js.map": "/React-Dad-Jokes/static/js/runtime-main.b59ce081.js.map",
+    "static/js/2.f71871ba.chunk.js": "/React-Dad-Jokes/static/js/2.f71871ba.chunk.js",
+    "static/js/2.f71871ba.chunk.js.map": "/React-Dad-Jokes/static/js/2.f71871ba.chunk.js.map",
+    "static/js/3.e3ce9a55.chunk.js": "/React-Dad-Jokes/static/js/3.e3ce9a55.chunk.js",
+    "static/js/3.e3ce9a55.chunk.js.map": "/React-Dad-Jokes/static/js/3.e3ce9a55.chunk.js.map",
     "index.html": "/React-Dad-Jokes/index.html",
-    "static/css/main.827f79b8.chunk.css.map": "/React-Dad-Jokes/static/css/main.827f79b8.chunk.css.map",
-    "static/js/2.9f0f6ca1.chunk.js.LICENSE.txt": "/React-Dad-Jokes/static/js/2.9f0f6ca1.chunk.js.LICENSE.txt"
+    "static/css/main.84f36940.chunk.css.map": "/React-Dad-Jokes/static/css/main.84f36940.chunk.css.map",
+    "static/js/2.f71871ba.chunk.js.LICENSE.txt": "/React-Dad-Jokes/static/js/2.f71871ba.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.be341e4e.js",
-    "static/js/2.9f0f6ca1.chunk.js",
-    "static/css/main.827f79b8.chunk.css",
-    "static/js/main.b72f1cde.chunk.js"
+    "static/js/runtime-main.b59ce081.js",
+    "static/js/2.f71871ba.chunk.js",
+    "static/css/main.84f36940.chunk.css",
+    "static/js/main.4b0deb3d.chunk.js"
   ]
 }

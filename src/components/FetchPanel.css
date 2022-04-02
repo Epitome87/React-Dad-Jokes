@@ -80,23 +80,21 @@ JokeList__btn-more = FetchPanel__btn-more
 }
 
 @media screen and (max-width: 750px) {
-  .JokeList {
-    flex-direction: column;
-    align-items: center;
-  }
   .FetchPanel {
-    width: 100%;
+    width: 95vw;
     margin-right: 0;
   }
+
   .FetchPanel img {
     width: 20%;
   }
+
   .FetchPanel__title {
     margin: 0.25rem;
     font-size: 2.25rem;
   }
 
-  .JokeList__btn-more {
+  .FetchPanel__btn-more {
     font-weight: 700;
     font-size: 1rem;
     margin: 1rem 0;

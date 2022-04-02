@@ -77,9 +77,11 @@ function JokePage() {
 
   if (isLoading) {
     return (
-      <div className='JokeList__spinner'>
-        <i className='far fa-8x fa-laugh fa-spin' />
-        <h1 className='JokeList__title'>Loading</h1>
+      <div className='JokePage'>
+        <div className='JokeList__spinner'>
+          <i className='far fa-8x fa-laugh fa-spin' />
+          <h1 className='FetchPanel__title'>Loading</h1>
+        </div>
       </div>
     );
   }
